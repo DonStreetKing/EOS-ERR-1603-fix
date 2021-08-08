@@ -1,0 +1,53 @@
+2021-08-08T04:41:57.006Z crashHandler:getConfig:env reading from C:\Program Files (x86)\Epic Games\Epic Online Services\env-config.json
+2021-08-08T04:41:57.008Z crashHandler:getConfig:machine:secret reading from C:\Program Files (x86)\Epic Games\Epic Online Services\machine-secret
+2021-08-08T04:41:57.008Z crashHandler:getConfig:proxy reading from C:\Program Files (x86)\Epic Games\Epic Online Services\proxy-config.json
+2021-08-08T04:41:57.009Z crashHandler:getConfig:proxy:warn cannot read, using defaults
+2021-08-08T04:41:57.009Z crashHandler:getConfig:cli arguments {
+  _: [],
+  'lite-mode': true,
+  optimize_for_size: true,
+  max_old_space_size: 128,
+  config: {},
+  c: {}
+}
+2021-08-08T04:41:57.011Z crashHandler:getConfig:cli overrides {}
+2021-08-08T04:41:57.011Z crashHandler:getConfig:startup {
+  env: {
+    http: { server: [Object] },
+    analytics: { throttleTimerMs: 3000, heartbeat: [Object], enabled: true },
+    installation: {
+      rootDir: '..',
+      launcherDir: 'Launcher',
+      signingPubKeyPath: 'egs-signing-pubkey.xml'
+    },
+    selfUpdate: {
+      monitor: [Object],
+      checksumFileName: 'checksum.json',
+      checksumAlgorithm: 'md5'
+    },
+    settings: { registryPath: 'Software\\Epic Games\\EOS\\MainService' },
+    service: { account: [Object], datarouter: [Object] },
+    version: '1.1.2',
+    environment: 'prod'
+  },
+  machine: {
+    id: 'c48c29e1-248c-491d-8fb7-aa4193b77238',
+    secret: '220fd5b7241b4aac853414a3aef6deea3832f0e5578020285efd9490b342ce5f'
+  },
+  proxy: { address: null, ca: { path: [Getter/Setter], content: null } }
+}
+2021-08-08T04:41:57.013Z crashHandler:epic:clientServiceRequest defaults https://datarouter.ol.epicgames.com/datarouter
+2021-08-08T04:41:57.013Z crashHandler:epic:clientServiceRequest defaults https://account-public-service-prod03.ol.epicgames.com/account
+2021-08-08T04:41:57.013Z crashHandler:epic:clientServiceRequest defaults https://account-public-service-prod03.ol.epicgames.com/account
+2021-08-08T04:41:57.014Z crashHandler:epic:clientServiceRequest defaults https://account-public-service-prod03.ol.epicgames.com/account
+2021-08-08T04:41:57.014Z crashHandler:epic:clientServiceRequest defaults https://account-public-service-prod03.ol.epicgames.com/account
+2021-08-08T04:41:57.026Z crashHandler:analytics:AnalyticsEmitter new {
+  SessionID: '{50c44cfc-2d48-47e6-941e-2197060e45ae}',
+  UploadType: 'eteventstream',
+  AppID: 'EpicOnlineServices.MainService',
+  AppVersion: '1.1.2',
+  AppEnvironment: 'prod',
+  UserID: '||c48c29e1-248c-491d-8fb7-aa4193b77238'
+}
+2021-08-08T04:41:57.039Z crashHandler:service Main Service PID = 6492
+2021-08-08T04:41:58.786Z crashHandler:service Main Service 0 signal - null
